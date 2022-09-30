@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #00916e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  background-color: #feefe5;
+  width: 500px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 7%);
+  border-radius: 5px;
+  max-width: 100%;
+}
+.header {
+  text-align: center;
+  padding: 5px 10px;
+  margin-bottom: 1rem;
+}
+.form {
+  padding: 30px 40px;
+  width: 100%;
+}
+.form-contorl {
+  margin-bottom: 2rem;
+  padding: 10px 20px;
+  position: relative;
+}
+.form-contorl label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.form-contorl input {
+  border: 2px solid #f0f0f0;
+  padding: 13px 20px;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 14px;
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  font-family: inherit;
+}
+.form-contorl.success input {
+  border-color: #2ecc71;
+}
+.form-contorl.success .check i {
+  color: #2ecc71;
+  visibility: visible;
+  font-size: 20px;
+}
+.form-contorl.error input {
+  border-color: #e74c3c;
+}
+.form-contorl.error .exclamation i {
+  color: #e74c3c;
+  visibility: visible;
+  font-size: 20px;
+}
+.form-contorl.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.form-contorl .check,
+.form-contorl .exclamation {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  visibility: hidden;
+}
+.form-contorl small {
+  position: absolute;
+  bottom: -10px;
+  visibility: hidden;
+}
+.form button {
+  display: block;
+  padding: 14px;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  color: white;
+  background-color: #009ddc;
+  width: 92%;
+  margin-left: 15px;
+  font-family: inherit;
+  cursor: pointer;
+}
